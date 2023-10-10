@@ -28,6 +28,10 @@ my $c = 0;
 my $m = 0;
 my $n = 0;
 
+my $numero1 = 0;
+my $numero2 = 0;
+my $res = 0;
+
 use constant PI => 3.14159265;
 
 # Comments
@@ -92,19 +96,20 @@ print "\n";
 # CASE
 print "### CASE ###\n";
 print "Informe um numero 1 - 7 para semana: ";
-$dia = <STDIN>;
-chomp($dia);
+#$dia = <STDIN>;
+# chomp($dia);
 
-given ($dia) {
-    when (1) { print "Domingo\n"; }
-    when (2) { print "Segunda\n"; }
-    when (3) { print "Terça\n"; }
-    when (4) { print "Quarta\n"; }
-    when (5) { print "Quinta\n"; }
-    when (6) { print "Sexta\n"; }
-    when (7) { print "Sabado\n"; }
-    default   { print "Valor nao existente\n"; }
-}
+# given ($dia) {
+    # when (1) { print "Domingo\n"; }
+    # when (2) { print "Segunda\n"; }
+    # when (3) { print "Terça\n"; }
+    # when (4) { print "Quarta\n"; }
+    # when (5) { print "Quinta\n"; }
+    # when (6) { print "Sexta\n"; }
+    # when (7) { print "Sabado\n"; }
+    # default   { print "Valor nao existente\n"; }
+ # }
+#
 print "\n";
 
 # REPEAT
@@ -183,4 +188,55 @@ print "Não tem PROCEDURE\n\n";
 print "### PONTEIRO ###\n";
 print "Não tem PONTEIRO \n";
 print " Não é necessário liberar memória manualmente, como em C ou C++. A variável será automaticamente coletada pelo coletor de lixo quando não estiver mais em uso. \n";
+print "\n";
+
+# TRY
+print "### TRY ###\n";
+#
+# print "Digite o valor 1: ";
+# $numero1= <STDIN>;
+# chomp($numero1);
+
+# print "Digite o valor 2: ";
+# $numero2 = <STDIN>;
+# chomp($numero2);
+
+# try {
+    # if ($numero2 == 0) {
+        # throw new Exception('Divisão por zero não é permitida!');
+    # }
+    # $res = $numero1 / $numero2;
+    # print "Resultado da divisão: " . $res . "\n";
+# } catch ($e) {
+    # print "Ocorreu uma exceção: " . $e->getMessage() . "\n";
+# }
+
+print "\n";
+
+# ENUM
+print "### ENUM ###\n";
+#
+# use enum qw(Vermelho Verde Azul Amarelo Laranja);
+
+# my $minhaCor = Azul;
+
+# given ($minhaCor) {
+    # when (Vermelho) {
+    #  print "Minha cor favorita é vermelho.\n";
+    # }
+    # when (Verde) {
+    #  print "Minha cor favorita é verde.\n";
+    # }
+    # when (Azul) {
+    #  print "Minha cor favorita é azul.\n";
+    # }
+    # when (Amarelo) {
+    #    print "Minha cor favorita é amarelo.\n";
+    #}
+    # when (Laranja) {
+    #    print "Minha cor favorita é laranja.\n";
+    # }
+    # default {
+    #    print "Eu não tenho uma cor favorita.\n";
+    # }
 print "\n";
