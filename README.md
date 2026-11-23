@@ -29,7 +29,7 @@ Exemplificação da sintaxe geral e básica da Linguagem PERL
 ```
 
 ## 👋🏽 DEMO
-[REPLIT](https://replit.com/@cleibp/Basic-Perl) 
+|=>
 
 ## Contatos
 
